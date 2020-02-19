@@ -7,6 +7,9 @@ namespace OCPLibrary
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
+        public bool IsManager { get; set; }
+        public bool IsExecutive { get; set; }
+
 
     }
 }

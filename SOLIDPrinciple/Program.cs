@@ -24,7 +24,7 @@ namespace SOLIDPrinciple
             #region O - Open Close Principle
             List<PersonModel> application = new List<PersonModel>()
               {
-                new PersonModel(){FirstName="Epuri",LastName ="Krithvika"},
+                new PersonModel(){FirstName="Epuri",LastName ="Krithvika", TypeOfEmployee = EmployeeType.Manager},
                 new PersonModel(){FirstName="Garaga",LastName ="Karthikaya"},
                 new PersonModel(){FirstName="PottriReddy",LastName ="Avanish"},
             };
@@ -40,7 +40,7 @@ namespace SOLIDPrinciple
 
             foreach (var employee in employees)
             {
-                System.Console.WriteLine($"{employee.FirstName},{employee.LastName}, {employee.EmailAddress} ");
+                System.Console.WriteLine($"{employee.FirstName},\t{employee.LastName}, \t{employee.EmailAddress}, \t{employee.IsManager},\t{employee.IsExecutive} ");
             }
             StandardMessages.EndApplication();
             #endregion
