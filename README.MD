@@ -6,6 +6,7 @@ I - Interface segregation
 D - Dependency inversion
 
 Open and close Principle shoud be open for extension and close for modification
+To follow Open and Close Principle always try to not couple your code with class as new is Glue.
 
 
 Adding project to the solution in cli 

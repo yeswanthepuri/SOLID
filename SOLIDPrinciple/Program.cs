@@ -22,25 +22,24 @@ namespace SOLIDPrinciple
             // StandardMessages.EndApplication();
             #endregion
             #region O - Open Close Principle
-            List<PersonModel> application = new List<PersonModel>()
+            List<IApplicantModel> application = new List<IApplicantModel>()
               {
-                new PersonModel(){FirstName="Epuri",LastName ="Krithvika", TypeOfEmployee = EmployeeType.Manager},
-                new PersonModel(){FirstName="Garaga",LastName ="Karthikaya"},
+                new ExecutiveModel(){FirstName="Epuri",LastName ="Krithvika"},
+                new ManagerModel(){FirstName="Garaga",LastName ="Karthikaya"},
                 new PersonModel(){FirstName="PottriReddy",LastName ="Avanish"},
             };
 
-            List<EmployeeModel> employees = new List<EmployeeModel>();
-
-            Accounts accountProcessing = new Accounts();
+            List<IEmployeeModel> employees = new List<IEmployeeModel>();
 
             foreach (var person in application)
             {
-                employees.Add(accountProcessing.Create(person));
+                employees.Add(person.AccountProcessor.Create(person));
             }
 
             foreach (var employee in employees)
             {
-                System.Console.WriteLine($"{employee.FirstName},\t{employee.LastName}, \t{employee.EmailAddress}, \t{employee.IsManager},\t{employee.IsExecutive} ");
+                System.Console.WriteLine
+                ($"{employee.FirstName},\t{employee.LastName}, \t{employee.EmailAddress}, \t{employee.IsManager},\t{employee.IsExecutive},\t{employee.Salary} ");
             }
             StandardMessages.EndApplication();
             #endregion
