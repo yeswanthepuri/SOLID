@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "SOLIDPrinciple/1.0.0": {
+        "dependencies": {
+          "OCPLibrary": "1.0.0"
+        },
+        "runtime": {
+          "SOLIDPrinciple.dll": {}
+        }
+      },
+      "OCPLibrary/1.0.0": {
+        "runtime": {
+          "OCPLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SOLIDPrinciple/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OCPLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

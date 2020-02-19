@@ -17,7 +17,7 @@ namespace SOLIDPrinciple
 
         public static void DisplayErrorMessage(string errorMessage)
         {
-            System.Console.WriteLine($"You Didn't enter a valid {errorMessage}}");
+            System.Console.WriteLine($"You Didn't enter a valid {errorMessage}");
         }
     }
 }
